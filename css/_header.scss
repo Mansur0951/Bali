@@ -1,0 +1,29 @@
+.header {
+  padding: 12px 0;
+  background-color: #ccc;
+
+  &__logo {
+    display: block;
+  }
+
+  &-img {
+    width: 60px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  &__container {
+    @include df-flex;
+    justify-content: space-between;
+  }
+
+  &-nav__list {
+    @include df-flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: var(--gap);
+    }
+  }
+}
