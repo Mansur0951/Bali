@@ -50,7 +50,7 @@ a {
 
 .header {
   padding: 12px 0;
-  background-color: #ccc;
+  background-color: #d0b228;
 }
 
 .header__logo {
@@ -83,6 +83,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__item {
+  color: #fff;
 }
 
 .header__item:not(:last-child) {
@@ -128,15 +132,16 @@ a {
 }
 
 .services-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: var(--gap);
 }
 
@@ -148,16 +153,15 @@ a {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.services-item:not(:last-child) {
-  margin-right: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .services__active {
   color: red;
-  -webkit-transform: scale(2.2);
-          transform: scale(2.2);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
 }
 
 .services-tabs {
@@ -184,5 +188,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.ymaps-2-1-79-inner-panes {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

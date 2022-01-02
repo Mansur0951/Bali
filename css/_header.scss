@@ -1,6 +1,6 @@
 .header {
   padding: 12px 0;
-  background-color: #ccc;
+  background-color: #d0b228;
 
   &__logo {
     display: block;
@@ -22,6 +22,9 @@
   }
 
   &__item {
+
+    color: #fff;
+
     &:not(:last-child) {
       margin-right: var(--gap);
     }
