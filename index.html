@@ -20,8 +20,8 @@
         <ul class="header-nav__list list_reset">
           <li class="header__item"><a href="#" class="header__link">Наши услуги</a></li>
           <li class="header__item"><a href="#" class="header__link">Где мы находимся</a></li>
-          <li class="header__item"><a href="#" class="header__link">Меню</a></li>
-          <li class="header__item"><a href="#" class="header__link">Меню</a></li>
+          <li class="header__item"><a href="#" class="header__link">Кафе</a></li>
+          <li class="header__item"><a href="#" class="header__link">что то еще</a></li>
         </ul>
       </nav>
     </div>
@@ -78,19 +78,31 @@
         <!--  -->
         <div class="services-tabs">
           <div class="services__tab services__tab-active" data-target="one">
-            <span class="services-tabs__caption">Lorem, ipsum dolor.</span>
+            <span class="services-tabs__caption">
+              Здесь будет описание услуг:
+              Например мойка
+            </span>
             <img src="img/zamena masla/zamena-tab-1.png" alt="">
           </div>
           <div class="services__tab"                     data-target="two">
-            <span class="services-tabs__caption">Lorem, ipsum dolor.</span>
+            <span class="services-tabs__caption">
+              Здесь будет описание услуг:
+              Например шиномонтажка
+            </span>
             <img src="img/zamena masla/services-2.png" alt="">
           </div>
           <div class="services__tab"                     data-target="three">
-            <span class="services-tabs__caption">Lorem, ipsum dolor.</span>
+            <span class="services-tabs__caption">
+              Здесь будет описание услуг:
+              Например кафе
+            </span>
             <img src="img/zamena masla/services-3.png" alt="">
           </div>
           <div class="services__tab"                     data-target="four">
-            <span class="services-tabs__caption">Lorem, ipsum dolor.</span>
+            <span class="services-tabs__caption">
+              Здесь будет описание услуг:
+              Например дитайлинг
+            </span>
             <img src="img/zamena masla/services.jpg" alt="">
           </div>
         </div>
@@ -99,14 +111,26 @@
     <!-- servoces -->
 
     <!-- why -->
-    <section class="why">
+    <!-- <section class="why">
       <div class="container why__container">
         <h1 class="title">Почему мы?</h1>
       </div>
-    </section>
+    </section> -->
     <!-- why -->
   </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="title footer__title">Где мы находимся</h2>
+      <div id="azsMap" class="baliMap" style="width: 600px; height: 400px"></div>
+    </div>
+  </footer>
+  <!-- footer -->
   <script src="js/script.js"></script>
+  <!-- яндекс карта -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="js/jsMAP.js"></script>
+  <!-- яндекс карта -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
 </body>
