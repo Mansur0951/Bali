@@ -26,6 +26,12 @@
 }
 
 .swiper {
+  overflow: hidden;
   width: 60%;
-  height: 300px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
 }

@@ -123,8 +123,14 @@ a {
 }
 
 .swiper {
+  overflow: hidden;
   width: 60%;
-  height: 300px;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
 }
 
 .services {
@@ -192,5 +198,24 @@ a {
 
 .ymaps-2-1-79-inner-panes {
   width: 100%;
+}
+
+@media (max-width: 922px) {
+  .hero__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero__descr {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

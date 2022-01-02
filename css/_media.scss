@@ -1,0 +1,15 @@
+@media (max-width: 922px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero__descr {
+    width: 100%;
+  }
+}
