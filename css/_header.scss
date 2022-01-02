@@ -7,9 +7,9 @@
   }
 
   &-img {
-    width: 60px;
+    width: vw(60);
     object-fit: cover;
-    border-radius: 100px;
+    border-radius: vw(100);
   }
 
   &__container {

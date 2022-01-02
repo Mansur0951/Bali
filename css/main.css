@@ -9,7 +9,7 @@ html {
 
 body {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.33333vw;
   cursor: url("../img/cursor.png");
 }
 
@@ -18,9 +18,9 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 100vw;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 1vw;
 }
 
 .list_reset {
@@ -38,7 +38,7 @@ img {
 
 .title {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.66667vw;
   text-align: center;
   margin-bottom: var(--gap);
 }
@@ -58,10 +58,10 @@ a {
 }
 
 .header-img {
-  width: 60px;
+  width: 5vw;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 100px;
+  border-radius: 8.33333vw;
 }
 
 .header__container {
@@ -94,7 +94,7 @@ a {
 }
 
 .hero {
-  padding: 60px 0;
+  padding: 5vw 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -110,12 +110,12 @@ a {
 
 .hero__title {
   margin: 0;
-  margin-bottom: var(--gap);
+  margin-bottom: 1.66667vw;
 }
 
 .hero__descr {
   margin: 0;
-  width: 450px;
+  width: 37.5vw;
 }
 
 .hero__swiper {
@@ -125,16 +125,11 @@ a {
 .swiper {
   overflow: hidden;
   width: 60%;
-  position: relative;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: absolute;
+  height: 25vw;
 }
 
 .services {
-  padding-top: 10px;
+  padding-top: 0.83333vw;
 }
 
 .services-btns {
@@ -144,18 +139,18 @@ a {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-gap: 20px;
+  grid-gap: 1.66667vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: var(--gap);
+  margin-bottom: 1.66667vw;
 }
 
 .services-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 18px;
+  font-size: 1.66667vw;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -179,7 +174,7 @@ a {
 .services-tabs__caption {
   display: block;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0.83333vw;
 }
 
 .services__tab {
@@ -194,10 +189,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.ymaps-2-1-79-inner-panes {
-  width: 100%;
 }
 
 @media (max-width: 922px) {
