@@ -7,9 +7,9 @@ html {
   align-items: center;
 }
 
-@function vw($value, $base: 1200) {
-  @return $value / $base * 100vw
-}
+// @function vw($value, $base: 1200) {
+//   @return $value / $base * 100vw
+// }
 
 :root {
   --gap: 30px;
@@ -18,7 +18,7 @@ html {
 
 body {
   font-weight: 400;
-  font-size: vw(16);
+  font-size: 16px;
   cursor: url('../img/cursor.png');
 }
 
@@ -27,9 +27,9 @@ img {
 }
 
 .container {
-  max-width: vw(1200);
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 vw(12);
+  padding: 0 12px;
 }
 
 .list_reset {
@@ -47,7 +47,7 @@ img {
 
 .title {
   margin: 0;
-  font-size: vw(20);
+  font-size: 20px;
   text-align: center;
   margin-bottom: var(--gap);
 }

@@ -1,5 +1,5 @@
 .hero {
-  padding: vw(60) 0;
+  padding: 60px 0;
   border-bottom: 1px solid #ccc;
 
   &__container {
@@ -12,12 +12,12 @@
 
   &__title {
     margin: 0;
-    margin-bottom: vw(20);
+    margin-bottom: 20px;
   }
 
   &__descr {
     margin: 0;
-    width: vw(450);
+    width: 450px;
   }
 
   &__swiper {
@@ -28,5 +28,5 @@
 .swiper {
   overflow: hidden;
   width: 60%;
-  height: vw(300);
+  height: 300px;
 }

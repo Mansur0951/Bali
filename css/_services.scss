@@ -6,15 +6,15 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: vw(20);
+    grid-gap: 20px;
     align-items: center;
-    margin-bottom: vw(20);
+    margin-bottom: 20px;
   }
 
   &-item {
 
     display: flex;
-    font-size: vw(20);
+    font-size: 20pxs;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     justify-content: center;
@@ -31,7 +31,7 @@
     &__caption {
       display: block;
       text-align: center;
-      margin-bottom: vw(10);
+      margin-bottom: 10px;
     }
   }
 

@@ -9,7 +9,7 @@ html {
 
 body {
   font-weight: 400;
-  font-size: 1.33333vw;
+  font-size: 16px;
   cursor: url("../img/cursor.png");
 }
 
@@ -18,9 +18,9 @@ img {
 }
 
 .container {
-  max-width: 100vw;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1vw;
+  padding: 0 12px;
 }
 
 .list_reset {
@@ -38,7 +38,7 @@ img {
 
 .title {
   margin: 0;
-  font-size: 1.66667vw;
+  font-size: 20px;
   text-align: center;
   margin-bottom: var(--gap);
 }
@@ -58,10 +58,10 @@ a {
 }
 
 .header-img {
-  width: 5vw;
+  width: 60px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8.33333vw;
+  border-radius: 100px;
 }
 
 .header__container {
@@ -94,7 +94,7 @@ a {
 }
 
 .hero {
-  padding: 5vw 0;
+  padding: 60px 0;
   border-bottom: 1px solid #ccc;
 }
 
@@ -110,12 +110,12 @@ a {
 
 .hero__title {
   margin: 0;
-  margin-bottom: 1.66667vw;
+  margin-bottom: 20px;
 }
 
 .hero__descr {
   margin: 0;
-  width: 37.5vw;
+  width: 450px;
 }
 
 .hero__swiper {
@@ -125,11 +125,11 @@ a {
 .swiper {
   overflow: hidden;
   width: 60%;
-  height: 25vw;
+  height: 300px;
 }
 
 .services {
-  padding-top: 0.83333vw;
+  padding-top: vw(10);
 }
 
 .services-btns {
@@ -139,18 +139,18 @@ a {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-gap: 1.66667vw;
+  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1.66667vw;
+  margin-bottom: 20px;
 }
 
 .services-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.66667vw;
+  font-size: 20pxs;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -174,7 +174,7 @@ a {
 .services-tabs__caption {
   display: block;
   text-align: center;
-  margin-bottom: 0.83333vw;
+  margin-bottom: 10px;
 }
 
 .services__tab {
