@@ -122,10 +122,28 @@ a {
   width: 40%;
 }
 
+.hero__swiper {
+  position: relative;
+}
+
 .swiper {
   overflow: hidden;
   width: 60%;
-  height: 300px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #7a956b;
+}
+
+.swiper-pagination-progressbar {
+  background-color: #fff;
 }
 
 .services {
@@ -191,6 +209,18 @@ a {
           flex-direction: column;
 }
 
+.baliMap {
+  width: 50%;
+}
+
+.ymaps-2-1-79-inner-panes {
+  width: 50%;
+}
+
+.ymaps-2-1-79-map {
+  max-width: vw(600);
+}
+
 @media (max-width: 922px) {
   .hero__container {
     -webkit-box-orient: vertical;
@@ -206,6 +236,9 @@ a {
     margin-bottom: 20px;
   }
   .hero__descr {
+    width: 100%;
+  }
+  .swiper {
     width: 100%;
   }
 }

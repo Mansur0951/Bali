@@ -25,8 +25,35 @@
   }
 }
 
+.hero__swiper {
+  position: relative;
+}
+
 .swiper {
   overflow: hidden;
   width: 60%;
-  height: 300px;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+  // color: red;
+  // font-size: 30px;
+  // background-image: url(../img/cursor.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #7a956b;
+}
+
+.swiper-pagination-progressbar {
+  background-color: #fff;
 }
