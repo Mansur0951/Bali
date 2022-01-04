@@ -1,13 +1,19 @@
 .header {
   padding: 12px 0;
-  background-color: #d0b228;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+
+  &__link {
+    font-size: 25px;
+    // color: black;
+  }
 
   &__logo {
     display: block;
   }
 
   &-img {
-    width: 60px;
+    width: 80px;
     object-fit: cover;
     border-radius: 100px;
   }
@@ -23,7 +29,7 @@
 
   &__item {
 
-    color: #fff;
+    color: #000;
 
     &:not(:last-child) {
       margin-right: var(--gap);

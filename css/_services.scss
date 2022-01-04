@@ -1,6 +1,6 @@
 .services {
 
-  padding-top: vw(10);
+  padding-top: var(--gap);
 
   &-btns {
     display: grid;
@@ -14,7 +14,7 @@
   &-item {
 
     display: flex;
-    font-size: 20pxs;
+    font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     justify-content: center;
@@ -32,6 +32,7 @@
       display: block;
       text-align: center;
       margin-bottom: 10px;
+      font-size: 19px;
     }
   }
 

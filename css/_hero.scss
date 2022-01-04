@@ -13,11 +13,13 @@
   &__title {
     margin: 0;
     margin-bottom: 20px;
+    text-align: left;
   }
 
   &__descr {
     margin: 0;
     width: 450px;
+    line-height: 173%;
   }
 
   &__swiper {
@@ -34,14 +36,6 @@
   width: 60%;
 }
 
-.swiper-button-next::after, 
-.swiper-button-prev::after {
-  // color: red;
-  // font-size: 30px;
-  // background-image: url(../img/cursor.png);
-  // background-repeat: no-repeat;
-  // background-size: contain;
-}
 
 .swiper-button-next,
 .swiper-button-prev {
