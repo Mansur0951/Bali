@@ -1,4 +1,4 @@
-@media (max-width: 922px) {
+@media (max-width: 961px) {
   .hero__container {
     flex-direction: column;
     align-items: center;
@@ -16,4 +16,134 @@
   .swiper {
     width: 100%;
   }
+
+  .footer-list__location {
+    display: none;
+  }
+
+  .footer-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 759px) {
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__form {
+    display: none;
+  }
+
+  .header {
+
+    &-nav {
+      position: absolute;
+      left: 0;
+      transform: translateX(-200%);
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid #ccc;
+
+      &__list {
+        flex-direction: column;
+        background-color: #fff;
+        padding: 20px;
+
+        li:not(:last-child) {
+          margin-bottom: 52px;
+        }
+      }
+    }
+
+    &__link {
+      position: relative;
+    }
+    
+    &__link::after {
+      content: '';
+      border-bottom: 1px solid red;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &__link:hover::after {
+      transform: scaleX(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &__link:active::after {
+      transform: scaleX(1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &-burger {
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index: 4;
+      cursor: pointer;
+
+      &::before, 
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transition: transform 0.3s ease-in-out;
+
+        &::before {
+          top: 0;
+        }
+      }
+        &::after {
+          bottom: 2px;
+        }
+
+        span {
+          position: absolute;
+          left: 0;
+          top: 14px;
+          width: 100%;
+          height: 2px;
+          background-color: red;
+          transition: transform 0.3s ease-in-out;
+        }
+    }
+  }
+}
+
+.header-burger.active::before {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.header-burger.active::after {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.header-burger.active span {
+  display: none;
+}
+
+.header-nav.active {
+  position: fixed;
+  z-index: 999;
+  transform: translateX(0);
 }

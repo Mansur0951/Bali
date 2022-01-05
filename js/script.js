@@ -17,3 +17,18 @@ window.addEventListener('DOMContentLoaded', function() {
     })
   })
 })
+
+// burger
+
+
+document.querySelector('.header-burger').addEventListener('click', function() {
+  document.querySelector('.header-burger').classList.toggle('active')
+  document.querySelector('.header-nav').classList.toggle('active')
+})
+
+
+// $(document).ready(function() {
+//   $('.header-burger').click(function(event) {
+//     $('.header-burger, .header-nav').toggleClass('active')
+//   })
+// })
