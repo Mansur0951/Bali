@@ -1,22 +1,19 @@
 .hero {
-  // position: relative;
   padding: 60px 0;
-  // border-bottom: 1px solid #ccc;
+  padding-top: 0;
+  min-height: 400px;
+  position: relative;
 
-  &__container {
-    position: relative;
-    display: grid;
-    // grid-template-columns: 1fr 2fr;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1em;
-    
+  &__text {
+    width: 60%;
+    position: absolute;
+    z-index: 3;
+    color: rgb(182, 19, 19);
   }
 
   &__tyre {
-    // position: absolute;
     width: 100px;
     left: 0;
-    // bottom: -54px;
     animation-name: tyre;
     animation-duration: 6s;
     animation-direction: alternate;
@@ -49,6 +46,26 @@
   width: 100%;
 }
 
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  height: 500px;
+
+  &-1 {
+    background-image: url("../img/new-bg.jpeg");
+  }
+  &-2 {
+    background-image: url("../img/new-bg-2.png");
+  }
+  &-3 {
+    background-image: url("../img/new-bg-3.png");
+  }
+  &-4 {
+    background-image: url("../img/new-bg-4.png");
+  }
+}
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -58,7 +75,7 @@
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #7a956b;
+  background: #000;
 }
 
 .swiper-pagination-progressbar {

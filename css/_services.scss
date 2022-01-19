@@ -17,7 +17,7 @@
     font-size: 22px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
   &__active {
@@ -26,11 +26,10 @@
   }
 
   &-tabs {
-    display: flex;
 
     &__caption {
-      display: block;
-      text-align: center;
+      display: flex;
+      align-items: center;
       margin-bottom: 10px;
       font-size: 19px;
     }
@@ -40,8 +39,9 @@
     display: none;
 
     &-active {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
     }
   }
 }
